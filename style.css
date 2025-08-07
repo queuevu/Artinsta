@@ -3,6 +3,11 @@ body{
     background-color: #ffffff;
     line-height: 1.5;
 }
+<<<<<<< HEAD
+.uploadNav{
+    text-align: end;
+}
+=======
 #upload_btn{
     float: right;
     margin-right: 20%;
@@ -27,3 +32,4 @@ body{
 #description_p{
     margin-left: 20%;
 }
+>>>>>>> cd4d0338a3c480f86df22f19efaae287de67eba8
