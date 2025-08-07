@@ -3,6 +3,24 @@ body{
     background-color: #ffffff;
     line-height: 1.5;
 }
-.uploadNav{
-    text-align: end;
+#upload_btn{
+    float: right;
+    margin-right: 20%;
+    font-size: medium;
+    box-sizing: 100px;
+    width: 100px;
+    height: 30px;
+}
+#header_text{
+    margin-left: 10px;
+}
+#head_text{
+    font-size: 70px;
+    font-family: cursive;
+    height: 70px;
+    width: 500px;
+    margin-left: 20%;
+}
+#description_p{
+    margin-left: 20%;
 }
