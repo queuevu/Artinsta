@@ -11,6 +11,9 @@ body{
     width: 100px;
     height: 30px;
 }
+.header_bar{
+    box-shadow: 10px 0px 5px #f9f9f9;
+}
 #header_text{
     margin-left: 10px;
 }
