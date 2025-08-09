@@ -1,28 +1,50 @@
 body{
+    position: absolute;
+    top: 0;
+    right:0;
+    bottom: 0;
+    left: 0;
+    margin: 0;
     font-family: 'Segoe UI', sans-serif;
-    background-color: #ffffff;
+    background-color: #052304;
     line-height: 1.5;
 }
-<<<<<<< HEAD
-.uploadNav{
-    text-align: end;
+#parent_contaner{
+    position: relative;
 }
-=======
+#container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+#upload_btn_container{
+    display: flex;
+    align-items: center;
+}
 #upload_btn{
-    float: right;
-    margin-right: 20%;
     font-size: medium;
     box-sizing: 100px;
     width: 100px;
     height: 30px;
+    color: #c8eac7;
+    background-color: #052304;
+    border: 2px solid #c8eac7;
+    box-shadow: 1px 1px #b2b2b2;
 }
 .header_bar{
-    box-shadow: 10px 0px 5px #f9f9f9;
+    position: sticky;
+    top: 0;
+    margin-top: 0;
+    width: 100%;
+    background-color: #c8eac7;
+    box-shadow: 15px 2px 5px #b2b2b2;
 }
 #header_text{
-    margin-left: 10px;
+    color: #052304;
+    padding-left: 10px;
 }
 #head_text{
+    color: rgb(216, 255, 214);
     font-size: 70px;
     font-family: cursive;
     height: 70px;
@@ -30,6 +52,17 @@ body{
     margin-left: 20%;
 }
 #description_p{
+    color: rgb(216, 255, 214);
     margin-left: 20%;
 }
->>>>>>> cd4d0338a3c480f86df22f19efaae287de67eba8
+img{
+    width: 80px;
+    height: 80px;
+}
+#main_container{
+    background-color: aliceblue;
+    width: 85%;
+    height: 700px;
+    border-radius: 40px;
+    justify-self: center;
+}
