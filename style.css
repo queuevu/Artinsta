@@ -16,13 +16,14 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 #upload_btn_container{
     display: flex;
     align-items: center;
 }
 #upload_btn{
-    font-size: medium;
+    font-size: medium;  
     box-sizing: 100px;
     width: 100px;
     height: 30px;
