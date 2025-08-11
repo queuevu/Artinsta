@@ -23,6 +23,8 @@ body{
     align-items: center;
 }
 #upload_btn{
+    text-align: center;
+    text-decoration: none;
     font-size: medium;  
     box-sizing: 100px;
     width: 100px;
@@ -37,6 +39,7 @@ body{
     top: 0;
     margin-top: 0;
     width: 100%;
+    align-items: center;
     background-color: #c8eac7;
     box-shadow: 15px 2px 5px #b2b2b2;
 }

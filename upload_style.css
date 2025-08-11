@@ -1,0 +1,17 @@
+body{
+    background-color: #052304;;
+}
+#form_container{
+    margin: 10%;
+    background-color: #c8eac7;;
+    border-radius: 30px;
+    justify-content: center;
+    text-align: center;
+}
+#form_body{
+    background-color: rgb(240, 255, 241);
+}
+table{
+    width: 100%;
+    font-size: larger;
+}
