@@ -6,6 +6,16 @@
     <title>Artinsta</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="Image/faviconImage.png" sizes="16*16" type="image/png">
+    <!-- AOS JS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000, // animation speed in ms
+    once: true      // animate only once while scrolling
+  });
+</script>
+
+    
 </head>
 <body>
     <nav class="header_bar"> 
@@ -14,9 +24,7 @@
     <div id="parent_container">
         <div id="container">
             <div id="head_text_container">
-                <h1 id="head_text">
-                    Artinsta
-                </h1>
+                <h1 id="head_text">Artinsta</h1>
                 <p id="description_p">Explore your style of art and upload your art</p>
             </div>
             <div id="upload_btn_container">
@@ -24,11 +32,15 @@
             </div>
         </div>
 
-        <div id="main_container">
-
-        </div>
+        <div class="art_card">
+    <img src="Image/streetLights.jpeg" alt="Artwork 1" data-aos="fade-up">
+    <div class="art_info" data-aos="fade-left" data-aos-delay="300">
+        <h3>Starry Night</h3>
+        <p>By Vincent van Gogh — A swirling masterpiece of post-impressionism.</p>
     </div>
-    
+</div>
+
+    </div>
     
     
 </body>
