@@ -21,82 +21,123 @@
             </div><br>
             <form id="upload_form">
                 <div class="form_step active">
-                    <table>
-                        <tr>
-                            <th colspan="2">Artist Details</th>
-                        </tr>
-                        <tr>
-                            <td>
-                                Full Name:
-                            </td>
-                            <td>
-                                <input type="text" name="full_name" required/>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Artist/Brand Name(if different from Full name):
-                            </td>
-                            <td>
-                                <input type="text" name="artist_name"/>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Email Address:
-                            </td>
-                            <td>
-                                <input type="email" name="email_adr"/>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                phone number:
-                            </td>
-                            <td>
-                                <input type="text" name="ph_number"/>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Bio: 
-                            </td>
-                            <td>
-                                <textarea name="descript" id="artist_bio"></textarea>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td><input type="button" value="next" class="next_btn nav_btn"></td>
-                        </tr>
-                    </table>
+                    <div class="artist-details">
+                        <div class="form-headdings"><h2>Artist Details</h2></div>
+                        <div class="form-group">
+                            Full Name:<br>
+                            <input type="text" id="full_name" name="full_name" class="form-input" required/><br>
+                            <input type="checkbox" name="display_name" value="dont_diplay">Do not display name<br><br>
+                        </div>
+                        <div class="form-group">
+                            Artist/Brand Name (if different from Full name):<br>
+                            <input type="text" id="artist_name" name="artist_name" class="form-input"/><br><br>
+                        </div>
+                        <div class="form-group">
+                            Email Address:<br>
+                            <input type="email" id="email_adr" name="email_adr" class="form-input"/><br><br>
+                        </div>
+                        <div class="form-group">
+                            Phone Number:<br>
+                            <input type="text" id="ph_number" name="ph_number" class="form-input"/><br><br>
+                        </div>
+                        <div class="form-group">
+                            Country:<br>
+                            <select name="Country" class="form-input">
+                                <option value="India">India</option>
+                                <option value="United States">United States</option>
+                                <option value="United Kingdom">United Kingdom</option>
+                                <option value="Canada">Canada</option>
+                                <option value="Australia">Australia</option>
+                                <option value="Germany">Germany</option>
+                                <option value="France">France</option>
+                                <option value="Italy">Italy</option>
+                                <option value="Spain">Spain</option>
+                                <option value="Brazil">Brazil</option>
+                                <option value="Japan">Japan</option>
+                                <option value="China">China</option>
+                                <option value="Russia">Russia</option>
+                                <option value="Mexico">Mexico</option>
+                                <option value="South Korea">South Korea</option>
+                                <option value="South Africa">South Africa</option>
+                                <option value="Singapore">Singapore</option>
+                                <option value="Netherlands">Netherlands</option>
+                                <option value="Sweden">Sweden</option>
+                                <option value="Switzerland">Switzerland</option>
+                                <option value="New Zealand">New Zealand</option>
+                                <option value="Turkey">Turkey</option>
+                                <option value="Argentina">Argentina</option>
+                                <option value="Saudi Arabia">Saudi Arabia</option>
+                                <option value="United Arab Emirates">United Arab Emirates</option>
+                                <option value="Indonesia">Indonesia</option>
+                                <option value="Nigeria">Nigeria</option>
+                                <option value="Egypt">Egypt</option>
+                                <option value="Pakistan">Pakistan</option>
+                                <option value="Bangladesh">Bangladesh</option>
+                                <option value="Philippines">Philippines</option>
+                                <option value="Vietnam">Vietnam</option>
+                                <option value="Thailand">Thailand</option>
+                                <option value="Other">Other</option>
+                            </select>
+                            <br><br>
+                        </div>
+                        <div class="form-group">
+                            Profile Photo:<br>
+                            <input type="file" id="artist_photo" name="artist_photo" alt="No file chosen"/><br><br>
+                        </div>
+                        <div class="form-group">
+                            Bio:<br>
+                            <textarea id="artist_bio" name="descript" class="form-input"></textarea><br><br>
+                        </div>
+                        <div class="form-group">
+                            Website/portfolio link:<br>
+                            <input type="text" id="portfolio" name="portfolio" class="form-input"/><br><br>
+                        </div>
+                        <div class="form-group">
+                            social media account:<br>
+                            <input type="text" id="social_media" name="social media" class="form-input"/><br><br>
+                        </div>
+                        <div class="form-group">
+                            <input type="button" value="next" class="next_btn nav_btn">
+                        </div>
+                    </div>
                 </div>
                 <div class="form_step">
-                    <table>
-                        <tr>
-                            <th colspan="2">Artwork Details</th>
-                        </tr>
-                        <tr>
-                            <td>
-                                Enter artist name:
-                            </td>
-                            <td>
-                                <input type="text" name="artist_name"/>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Enter Description of your Art: 
-                            </td>
-                            <td>
-                                <textarea name="descript" id="ArtDecription"></textarea>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><input type="button" value="previous" class="prev_btn nav_btn"></td>
-                            <td><input type="button" value="next" class="next_btn nav_btn"></td>
-                        </tr>
-                    </table>
+                    <div class="artwork-details">
+                        <div class="form-headdings"><h2>Artwork Details</h2></div>
+                        <div class="form-group">
+                            Artwork Title:<br>
+                            <input type="text" id="title" name="title" class="form-input" required/><br><br>
+                        </div>
+                        <div class="form-group">
+                            Medium:<br>
+                            <input type="radio" name="medium" value="oil-painting"> Oil on canvas
+                            <input type="radio" name="medium" value="digital">Digital illustration 
+                            <input type="radio" name="medium" value="Watercolor"> Watercolor
+                            <input type="radio" name="medium" value="Mixed">Mixed media
+                            <input type="radio" name="medium" value="other">Other <br><br>
+                        </div>
+                        <div class="form-group">
+                            Year created:<br>
+                            <input type="text" id="year_created" name="year_created" class="form-input"/><br><br>
+                        </div>
+                        <div class="form-group">
+                            Would you like to sell it?:<br>
+                            <input type="radio" value="yes" name="sale"/>Yes
+                            <input type="radio" value="no" name="sale"/>No<br><br>
+                        </div>
+                        <div class="form-group">
+                            Price:<br>
+                            <input type="text" id="price" name="price" class="form-input"/><br><br>
+                        </div>
+                        <div class="form-group">
+                            Description / Story Behind the Artwork:<br>
+                            <textarea id="artist_bio" name="art_description" class="form-input"></textarea><br><br>
+                        </div>
+                        <div class="form-group">
+                            <input type="button" value="previous" class="prev_btn nav_btn">
+                            <input type="button" value="next" class="next_btn nav_btn">
+                        </div>
+                    </div>
                 </div>
                 <div class="form_step">
                     <table>

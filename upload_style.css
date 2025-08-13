@@ -6,7 +6,6 @@ body{
     background-color: #c8eac7;;
     border-radius: 30px;
     justify-content: center;
-    text-align: center;
 }
 .step-indicators{
     display: flex;
@@ -35,8 +34,15 @@ body{
 .form_step.active{
     display: block;
 }
+#form_head{
+    text-align: center;
+    font-size: 30px;
+    color: #12003e;
+    padding-top: 20px;
+}
 #form_body{
     background-color: rgb(240, 255, 241);
+    font-size: larger;
 }
 table{
     width: 100%;
@@ -46,9 +52,32 @@ table{
   background: rgb(67, 23, 117);
   color: white;
   border: none;
+  border-radius: 30px;
   cursor: pointer;
-  width: 30%;
-  height: 100%;
+  width: 20%;
+  height: 40px;
   font-weight: bold;
-  font-size: medium;
+  font-size: large;
+}
+.next_btn{
+    margin-right: 10%;
+    justify-self: right;
+}
+.form_step{
+    padding-left: 10%;
+    padding-bottom: 10%;
+}
+.form-input{
+    width: 85%;
+    height: 30px;
+    padding: 5px;
+    border-top: 0cm;
+    border-left: 0cm;
+    border-right: 0cm;
+    border-bottom: 2px solid #12003e;
+    background: none;
+}
+.form-headdings{
+    color: #12003e;
+    justify-self: center;
 }
