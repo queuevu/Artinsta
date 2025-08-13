@@ -11,27 +11,105 @@
     <div id="form_container">
         <div id="form_head">
             <h1 id="form_head_text">Art Registration Form</h1>
+            <p>Upload your Art into Artinsta by filling this form.</p>
         </div>
         <div id="form_body">
+            <div class="step-indicators">
+                <div class="step active">1</div>
+                <div class="step">2</div>
+                <div class="step">3</div>
+            </div><br>
             <form>
-                <table>
-                    <tr>
-                        <td>
-                            Enter artist name:
-                        </td>
-                        <td>
-                            <input type="text" name="artist_name"/>
-                        </td>
+                <div class="form_step-active">
+                    <table>
                         <tr>
-                        <td>
-                            Enter Description of your Art: 
-                        </td>
-                        <td>
-                            <textarea name="descript" id="ArtDecription"></textarea>
-                        </td>
+                            <th colspan="2">Artist Details</th>
                         </tr>
-                    </tr>
-                </table>
+                        <tr>
+                            <td>
+                                Full Name:
+                            </td>
+                            <td>
+                                <input type="text" name="artist_name"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Artist/Brand Name(if d)
+                            </td>
+                            <td>
+                                <input type="text" name="artist_name"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Enter Description of your Art: 
+                            </td>
+                            <td>
+                                <textarea name="descript" id="ArtDecription"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><input type="button" value="next" class="next_btn"></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="form_step">
+                    <table>
+                        <tr>
+                            <th colspan="2">Artwork Details</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                Enter artist name:
+                            </td>
+                            <td>
+                                <input type="text" name="artist_name"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Enter Description of your Art: 
+                            </td>
+                            <td>
+                                <textarea name="descript" id="ArtDecription"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="button" value="previous" clas="nav_btn"></td>
+                            <td><input type="button" value="next" class="nav_btn"></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="form_step">
+                    <table>
+                        <tr>
+                            <th colspan="2">Extra Information</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                Enter artist name:
+                            </td>
+                            <td>
+                                <input type="text" name="artist_name"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Enter Description of your Art: 
+                            </td>
+                            <td>
+                                <textarea name="descript" id="ArtDecription"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="button" value="previous" clas="nav_btn"></td>
+                            <td><input type="button" value="submit" class="nav_btn"></td>
+                        </tr>
+                    </table>
+                </div>
+                
             </form>
         </div>
     </div>
