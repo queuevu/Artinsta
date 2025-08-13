@@ -25,14 +25,14 @@ body{
   align-items: center;
   font-weight: bold;
 }
-.step_active{
+.step.active{
     color: azure;
-    background-color: rgb(67, 23, 117);
+    background: rgb(67, 23, 117);
 }
 .form_step{
     display: none;
 }
-.form_step-active{
+.form_step.active{
     display: block;
 }
 #form_body{
@@ -47,4 +47,8 @@ table{
   color: white;
   border: none;
   cursor: pointer;
+  width: 30%;
+  height: 100%;
+  font-weight: bold;
+  font-size: medium;
 }
