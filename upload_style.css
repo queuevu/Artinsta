@@ -25,10 +25,30 @@ body{
   align-items: center;
   font-weight: bold;
 }
+.step.active{
+    color: azure;
+    background: rgb(67, 23, 117);
+}
+.form_step{
+    display: none;
+}
+.form_step.active{
+    display: block;
+}
 #form_body{
     background-color: rgb(240, 255, 241);
 }
 table{
     width: 100%;
     font-size: larger;
+}
+.nav_btn{
+  background: rgb(67, 23, 117);
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 30%;
+  height: 100%;
+  font-weight: bold;
+  font-size: medium;
 }
