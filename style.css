@@ -6,7 +6,7 @@ body{
     left: 0;
     margin: 0;
     font-family: 'Segoe UI', sans-serif;
-    background-color: #052304;
+    background-color:#C0C9EE;
     line-height: 1.5;
 }
 #parent_contaner{
@@ -40,15 +40,15 @@ body{
     margin-top: 0;
     width: 100%;
     align-items: center;
-    background-color: #c8eac7;
-    box-shadow: 15px 2px 5px #b2b2b2;
+    background-color:#7976b5;
+    box-shadow: 15px 2px 5px #aaaaf7;
 }
 #header_text{
     color: #052304;
     padding-left: 10px;
 }
 #head_text{
-    color: rgb(216, 255, 214);
+    color:#ffff;
     font-size: 70px;
     font-family: cursive;
     height: 70px;
@@ -56,7 +56,7 @@ body{
     margin-left: 20%;
 }
 #description_p{
-    color: rgb(216, 255, 214);
+    color:#ffff;
     margin-left: 20%;
 }
 img{
