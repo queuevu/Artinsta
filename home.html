@@ -6,20 +6,13 @@
     <title>Artinsta</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="Image/faviconImage.png" sizes="16*16" type="image/png">
-    <!-- AOS JS -->
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-  AOS.init({
-    duration: 1000, // animation speed in ms
-    once: true      // animate only once while scrolling
-  });
-</script>
-
-    
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  
 </head>
 <body>
     <nav class="header_bar"> 
-        <h1 id="header_text"><img src="Image/faviconImage.png"/>Artinsta</h1>
+        <h1 id="header_text">
+        <img src="Image/faviconImage.png"/>Artinsta</h1>
     </nav>
     <div id="parent_container">
         <div id="container">
@@ -32,16 +25,36 @@
             </div>
         </div>
 
-        <div class="art_card">
-    <img src="Image/streetLights.jpeg" alt="Artwork 1" data-aos="fade-up">
-    <div class="art_info" data-aos="fade-left" data-aos-delay="300">
-        <h3>Starry Night</h3>
-        <p>By Vincent van Gogh — A swirling masterpiece of post-impressionism.</p>
-    </div>
-</div>
+        <section id="gallery"> 
+            <div class="art-card">
+                <img src="Image/streetLights.jpeg" alt="Starry Night">
+                <div class="art-text" data-aos="fade-left" data-aos-delay="300">
+                    <h2>Starry Night</h2>
+                    <p>By Vincent van Gogh — A swirling masterpiece of post-impressionism.</p>
+                </div>
+            </div>
 
+            <div class="art-card reverse">
+                <div class="art-text" data-aos="fade-right" data-aos-delay="300">
+                    <h2>Mona Lisa</h2>
+                    <p>By Leonardo da Vinci — The world's most famous portrait.</p>
+                </div>
+                <img src="Image/man_with_apple.jpg" alt="Mona Lisa">
+            </div>
+        </section>
     </div>
+
     
+  
     
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 800, // Animation speed
+    easing: 'ease-in-out',
+    once: true // Animate only once
+  });
+</script>
+  
 </body>
 </html>

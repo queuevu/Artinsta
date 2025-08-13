@@ -39,13 +39,16 @@ body{
     top: 0;
     margin: 0;
     width: 100%;
-    padding: 0%;
-    
+    padding: 10px 20 px;
+    height: auto;
     
     background:linear-gradient(90deg,#ffccdd,#d9b3ff,#b3e6ff);
     box-shadow: 15px 2px 5px #aaaaf7;
 }
-
+.header_bar img{
+    max-height: 110px;  /* Controls the logo size */
+    width: auto;
+}
 #head_text{
     color:#ffff;
     font-size: 70px;
@@ -61,10 +64,7 @@ body{
     color:#ffff;
     margin-left: 20%;
 }
-img{
-    width: 80px;
-    height: 80px;
-}
+
 #main_container{
     background-color: aliceblue;
     width: 90%;
@@ -81,31 +81,34 @@ img{
   
 }
 
-
-/* Succesfully ignore the below */
-.art_card {
-  display: flex;                 /* put image & text side by side */
-  align-items: center;           /* vertically align them */
-  gap: 20px;                      /* space between image & text */
+.art-card {
+  display: flex;                 
+  align-items: center;           
+  gap: 40px;                      /* space between image & text */
   width: 100%;
   max-width: 700px;
-  background: white;
+  background: rgba(255,255,255,0.08);
   border-radius: 20px;
-  overflow: hidden;
   padding: 20px;
-  box-shadow: 0 4px 15px rgba(195, 154, 249, 0.2);
+  margin: 60px auto;
+
+  justify-content: center;
+  margin-bottom: 60px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .art_card:hover {
-  transform: translateY(-10px) scale(1.03);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  flex-direction: row-reverse;
 }
 
-.art_card img {
-  width: 50%;                     /* half the space for image */
-  height: auto;
+.art-card img {
+   width: 60%;
+   max-height: 450px;
+  border-radius: 20px;
   object-fit: cover;
-  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);/* half the space for image */
 }
 .art_info {
   width: 50%;                     /* half for text */
@@ -120,7 +123,7 @@ img{
   font-size: 15px;
   line-height: 1.3;
 }
-/* Alternate layout for even cards */
+
 .art_card:nth-child(even) {
   flex-direction: row-reverse; /* swaps image & text */
 }
