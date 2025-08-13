@@ -8,6 +8,23 @@ body{
     justify-content: center;
     text-align: center;
 }
+.step-indicators{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 2%;
+}
+.step {
+  width: 30px;
+  height: 30px;
+  margin: 0 10px;
+  background: #e4e2e6;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
 #form_body{
     background-color: rgb(240, 255, 241);
 }
