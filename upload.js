@@ -29,3 +29,20 @@ document.getElementById("upload_form").addEventListener("submit", function(e) {
   e.preventDefault();
   alert("Form submitted successfully!");
 });
+
+function showprice() {
+    let price_container = document.getElementById("price_container");
+    price_container.style.display = "block";
+}
+function hideprice() {
+    let price_container = document.getElementById("price_container");
+    price_container.style.display = "none";
+}
+function showcategory() {
+    let category_container = document.getElementById("other_style_container");
+    category_container.style.display = "block";
+}
+function hidecategory() {
+    let category_container = document.getElementById("other_style_container");
+    category_container.style.display = "none";
+}

@@ -122,12 +122,16 @@
                         </div>
                         <div class="form-group">
                             Would you like to sell it?:<br>
-                            <input type="radio" value="yes" name="sale"/>Yes
-                            <input type="radio" value="no" name="sale"/>No<br><br>
+                            <input type="radio" value="yes" name="sale" onclick="showprice()"/>Yes
+                            <input type="radio" value="no" name="sale"  onclick="hideprice()"/>No<br><br>
                         </div>
-                        <div class="form-group">
+                        <div class="form-group" id="price_container" style="display:none;">
                             Price:<br>
                             <input type="text" id="price" name="price" class="form-input"/><br><br>
+                        </div>
+                        <div class="form-group">
+                            Upload Artwork Image (JPG/PNG, Minimum 3000px on longest side):<br>
+                            <input type="file" id="artwork_image" name="artwork_image" alt="No file chosen" accept="image/jpeg,image/png" required/><br><br>
                         </div>
                         <div class="form-group">
                             Description / Story Behind the Artwork:<br>
@@ -140,31 +144,48 @@
                     </div>
                 </div>
                 <div class="form_step">
-                    <table>
-                        <tr>
-                            <th colspan="2">Extra Information</th>
-                        </tr>
-                        <tr>
-                            <td>
-                                Enter artist name:
-                            </td>
-                            <td>
-                                <input type="text" name="artist_name"/>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Enter Description of your Art: 
-                            </td>
-                            <td>
-                                <textarea name="descript" id="ArtDecription"></textarea>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><input type="button" value="previous" class="prev_btn nav_btn"></td>
-                            <td><input type="submit" value="submit" class="nav_btn"></td>
-                        </tr>
-                    </table>
+                    <div class="Extra-details">
+                        <div class="form-headdings"><h2>Extra Information</h2></div>
+                        <div class="form-group">
+                            Keywords (maximum 10):<br>
+                            <input type="text" id="Keywords" name="Keywords" class="form-input" /><br><br>
+                        </div>
+                        <div class="form-group">
+                            Hashtags (maximum 30):<br>
+                            <input type="text" id="Hashtags" name="Hashtags" class="form-input" /><br><br>
+                        </div>
+                        <div class="form-group">
+                            Category/Style:<br>
+                            <input type="radio" name="style" value="Abstract" onclick="hidecategory()"> Abstract
+                            <input type="radio" name="style" value="digital" onclick="hidecategory()">Digital art 
+                            <input type="radio" name="style" value="Realism" onclick="hidecategory()"> Watercolor
+                            <input type="radio" name="style" value="Photography" onclick="hidecategory()">Photography
+                            <input type="radio" name="style" value="Sculpture" onclick="hidecategory()">Sculpture
+                            <input type="radio" name="style" value="Impressionism" onclick="hidecategory()">Impressionism
+                            <input type="radio" name="style" value="other" onclick="showcategory()" >Other <br><br>
+                        </div>
+                        <div class="form-group" id="other_style_container" style="display:none;">
+                            Category:<br>
+                            <input type="text" id="other style" name="other_style" class="form-input"/><br><br>
+                        </div>
+                        <div class="form-group">
+                            Theme/Subject matter:<br>
+                            <input type="text" id="theme" name="theme" class="form-input"/><br><br>
+                        </div>
+                        <div class="form-group">
+                            License / Usage Rights:<br>
+                            <input type="radio" name="license" value="all-rights-reserved" required> All Rights Reserved<br>
+                            <input type="radio" name="license" value="cc-by"> Creative Commons Attribution (CC BY)<br>
+                            <input type="radio" name="license" value="cc-by-sa"> Creative Commons Attribution-ShareAlike (CC BY-SA)<br>
+                            <input type="radio" name="license" value="cc-by-nd"> Creative Commons Attribution-NoDerivatives (CC BY-ND)<br>
+                            <input type="radio" name="license" value="cc-by-nc"> Creative Commons Attribution-NonCommercial (CC BY-NC)<br>
+                            <input type="radio" name="license" value="cc0"> CC0 (Public Domain Dedication)<br><br>
+                        </div>
+                        <div class="form-group">
+                            <input type="button" value="previous" class="prev_btn nav_btn">
+                            <input type="submit" value="submit" class="submit_btn nav_btn">
+                        </div>
+                    </div>
                 </div>
                 
             </form>
