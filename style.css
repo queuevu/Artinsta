@@ -144,10 +144,10 @@ body{
    max-height: 450px;
   border-radius: 20px;
   object-fit: cover;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.15);/* half the space for image */
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
 }
 .art_info {
-  width: 50%;                     /* half for text */
+  width: 50%;                     
 }
 .art_info h3 {
   margin: 10px 0;
