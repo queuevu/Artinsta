@@ -148,12 +148,20 @@
                         <div class="form-headdings"><h2>Extra Information</h2></div>
                         <div class="form-group">
                             Keywords (maximum 10):<br>
-                            <input type="text" id="Keywords" name="Keywords" class="form-input" /><br><br>
+                            <div class="keyword-wrapper">
+                                <div class="keyword_container" id="keywordcontainer"></div>
+                                <input type="text" id="Keywordinput" name="Keywords_input" class="form-input" placeholder="Type a keyword and press Enter"/><br><br>
+                            </div>
                         </div>
+                        <input type="hidden" id="keywords" name="keywords">
                         <div class="form-group">
                             Hashtags (maximum 30):<br>
-                            <input type="text" id="Hashtags" name="Hashtags" class="form-input" /><br><br>
+                            <div class="tag-wrapper">
+                                <div class="tag_container" id="tagcontainer"></div>
+                                <input type="text" id="Hashtag_input" name="Hashtags" class="form-input" placeholder="Type a hashtag and press Enter"/><br><br>
+                            </div>
                         </div>
+                        <input type="hidden" id="hashtags" name="hashtags">
                         <div class="form-group">
                             Category/Style:<br>
                             <input type="radio" name="style" value="Abstract" onclick="hidecategory()"> Abstract
