@@ -5,6 +5,7 @@ let currentStep = 0;
 document.querySelectorAll(".next_btn").forEach(btn => {
   btn.addEventListener("click", () => {
     changeStep(1);
+    window.scrollTo(0, 0); // Scroll to top on next step
   });
 });
 
