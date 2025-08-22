@@ -1,0 +1,1 @@
+mongodb+srv://viyolah:viyu_04@cluster0.9ulvoti.mongodb.net/?retryWrites=true&w=majority&appName=ArtinstaDB
