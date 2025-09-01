@@ -1,1 +1,15 @@
+connection string
+-------------------
 mongodb+srv://viyolah:viyu_04@cluster0.9ulvoti.mongodb.net/?retryWrites=true&w=majority&appName=ArtinstaDB
+
+
+The tables that we decided to have
+-----------------------------------
+Artist -- artist_number, artist_fullname, artist_brand, display_name, email, 
+          phone_no, country, profile_photo, bio, website link, social_media, 
+          display_name. 
+
+Art --  art_no, artist_number, medium, year_created, sell, description.
+
+ExtraDetails--  art_no, E_no.
+
