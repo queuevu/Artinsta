@@ -5,7 +5,7 @@ app.use(express.urlencoded({extended:true}));
 app.use(express.static(path.join(__dirname, 'public')));
 app.get("/upload",function(req,res){
     
-    res.sendFile(path.join(__dirname, 'public', 'home.html'));
+    res.sendFile(path.join(__dirname, 'public', 'upload.html'));
 })
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'home.html'));
