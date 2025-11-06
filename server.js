@@ -5,10 +5,11 @@ var app=express();
 const path = require('path'); 
 const mongoose = require('mongoose');
 const multer = require("multer");
-const Artist = require("./models/Artist");
+const Artist = require("./models/artist");
 
 app.use(express.urlencoded({extended:true}));
 app.use(express.static(path.join(__dirname, 'public')));
+
 
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'home.html'));
