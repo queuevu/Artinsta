@@ -24,6 +24,7 @@ mongoose.connect(process.env.MONGO_URI)
 }).catch(err => console.log(err));
 
 
+<<<<<<< HEAD
 // ✅ Multer Setup (Add this)
 const storage = multer.diskStorage({
   destination: function(req, file, cb) {
@@ -64,3 +65,39 @@ app.post("/register-artist", upload.single("profile_photo"), async (req, res) =>
 app.listen(port,function(){
     console.log("server running");
 }) ;
+=======
+const artistSchema = new mongoose.Schema({
+  Full_Name: String,
+  Artist_Name: String,
+  Email: String,
+  Phone_Number:String,
+  Country:String,
+  Bio:String,
+  social_media_account:String,
+  Artwork_Title:String,
+  Medium:String,
+  Year_created:Date,
+  Sell_it:Boolean,
+  Price:Number,
+  Description_art:String,
+  Keywords:String,
+  Hashtags:String,
+  Category:String,
+  Other_category:String,
+  Theme:String,
+  License:String,
+});
+
+const Art = mongoose.model('Art', artistSchema);
+
+const port=process.env.port || 3000;
+
+app.listen(port,async () => {
+  console.log('Server running on http://localhost:3000');
+
+  // // Test route trigger manually
+  // const testStudent = new Art({ name: 'Viyola', age: 22, course: 'MCA' });
+  // await testStudent.save();
+  // console.log('Student added automatically!');
+});
+>>>>>>> 478aff73efdd5c575a8c877168f6ed6376e27560
