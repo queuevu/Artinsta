@@ -59,11 +59,15 @@ app.post("/register-artist", upload.single("profile_photo"), async (req, res) =>
   }
   });
 
+<<<<<<< HEAD
   const port=process.env.port || 3000;
 
 app.listen(port,function(){
     console.log("server running");
 }) ;
+=======
+  
+>>>>>>> 20ebecf10849d2b19144754d83e9baaed5a1574d
 const artistSchema = new mongoose.Schema({
   Full_Name: String,
   Artist_Name: String,
