@@ -24,7 +24,6 @@ mongoose.connect(process.env.MONGO_URI)
 }).catch(err => console.log(err));
 
 
-<<<<<<< HEAD
 // ✅ Multer Setup (Add this)
 const storage = multer.diskStorage({
   destination: function(req, file, cb) {
@@ -60,12 +59,7 @@ app.post("/register-artist", upload.single("profile_photo"), async (req, res) =>
   }
   });
 
-  const port=process.env.port || 3000;
-
-app.listen(port,function(){
-    console.log("server running");
-}) ;
-=======
+  
 const artistSchema = new mongoose.Schema({
   Full_Name: String,
   Artist_Name: String,
@@ -100,4 +94,3 @@ app.listen(port,async () => {
   // await testStudent.save();
   // console.log('Student added automatically!');
 });
->>>>>>> 478aff73efdd5c575a8c877168f6ed6376e27560
