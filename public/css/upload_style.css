@@ -6,6 +6,7 @@ body{
     background-color: #c4c6da;;
     border-radius: 30px;
     justify-content: center;
+    
 }
 .step-indicators{
     display: flex;
