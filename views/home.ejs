@@ -4,12 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Artinsta</title>
+
+
+
     <link rel="stylesheet" href="/css/style.css">
     <link rel="icon" href="images/faviconImage.png" sizes="16*16" type="image/png">
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
   
 </head>
 <body>
+        <a href="/upload" id="upload_btn">Upload</a>
+        <a href="/feed" id="gallery_btn" style="margin-left:15px;">View Gallery</a>
+
     <nav class="header_bar"> 
         <div id="header_text">
             <div id="logo_container">
@@ -34,7 +40,7 @@
         </div>
         <div id="main_container">
             <div class="feed-container">
-                <% artworks.forEach(item => { %>
+                <% newArtist.forEach(item => { %>
                     <div class="feed-card">
 
                         <img src="/uploads/<%= item.artwork_image_file %>" alt="Artwork Image" class="feed-image">
@@ -53,8 +59,6 @@
         </div>
     </div>
 
-    
-  
     
   <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 <script>
