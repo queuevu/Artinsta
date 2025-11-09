@@ -117,7 +117,7 @@ body{
     box-shadow: 0 4px 30px rgba(0,0,0,0.2);
 }
 
-.art-card {
+.feed-card {
   display: flex;                 
   align-items: center;           
   gap: 40px;                      /* space between image & text */
@@ -135,31 +135,29 @@ body{
   box-shadow: 0px 4px 15px rgba(0,0,0,0.4);
 }
 
-.art_card:hover {
-  flex-direction: row-reverse;
-}
 
-.art-card img {
+
+.feed-card img {
    width: 60%;
    max-height: 450px;
   border-radius: 20px;
   object-fit: cover;
   box-shadow: 0 4px 15px rgba(0,0,0,0.15);
 }
-.art_info {
+.feed-details {
   width: 50%;                     
 }
-.art_info h3 {
+.feed-details h3 {
   margin: 10px 0;
   font-size: 30px;
 }
 
-.art_info p {
+.feed-details p {
   margin: 5px 0 0;
   font-size: 15px;
   line-height: 1.3;
 }
 
-.art_card:nth-child(even) {
+.feed-card:nth-child(even) {
   flex-direction: row-reverse; /* swaps image & text */
 }

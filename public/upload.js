@@ -27,7 +27,6 @@ function changeStep(direction) {
 
 // Handle submit
 document.getElementById("upload_form").addEventListener("submit", function(e) {
-  e.preventDefault();
   alert("Form submitted successfully!");
 });
 
@@ -137,7 +136,7 @@ function renderkeys() {
   });
 }
 
-function updateHiddenInput() {
+function updateHiddenkeyInput() {
   hiddenkeyInput.value = keywords.join(",");
 }
 
